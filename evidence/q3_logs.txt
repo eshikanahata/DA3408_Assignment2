@@ -1,0 +1,16 @@
+=== shard-validation-0-w9wd9 ===
+RESULT shard_index=0 pod=shard-validation-0-w9wd9 node=minikube-m02 total_rows=40 invalid_rows=3
+=== shard-validation-1-78w6b ===
+RESULT shard_index=1 pod=shard-validation-1-78w6b node=minikube-m02 total_rows=40 invalid_rows=4
+=== shard-validation-2-w5ph8 ===
+RESULT shard_index=2 pod=shard-validation-2-w5ph8 node=minikube total_rows=40 invalid_rows=5
+=== shard-validation-3-qlp55 ===
+RESULT shard_index=3 pod=shard-validation-3-qlp55 node=minikube-m02 total_rows=40 invalid_rows=6
+=== shard-validation-4-fz9n4 ===
+RESULT shard_index=4 pod=shard-validation-4-fz9n4 node=minikube total_rows=40 invalid_rows=7
+=== shard-validation-5-m929n ===
+RESULT shard_index=5 pod=shard-validation-5-m929n node=minikube total_rows=40 invalid_rows=3
+=== shard-validation-6-z6lcl ===
+RESULT shard_index=6 pod=shard-validation-6-z6lcl node=minikube-m02 total_rows=40 invalid_rows=4
+=== shard-validation-7-hxnk9 ===
+RESULT shard_index=7 pod=shard-validation-7-hxnk9 node=minikube-m02 total_rows=40 invalid_rows=5

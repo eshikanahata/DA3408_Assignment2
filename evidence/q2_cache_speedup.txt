@@ -1,0 +1,7 @@
+First request (expect CACHE MISS - computes prediction)
+HTTP 000, time_total=0.010445s
+{"label":"spam"}
+Second request, identical text (expect CACHE HIT - reads from Redis)
+HTTP 000, time_total=0.004376s
+{"label":"spam"}
+api service logs (should show one CACHE MISS then one CACHE HIT)

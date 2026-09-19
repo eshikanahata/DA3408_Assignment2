@@ -1,0 +1,2 @@
+IMAGE                 ID             DISK USAGE   CONTENT SIZE   EXTRA
+spam-api:multistage   0a75a3ac892b        713MB          164MB        

@@ -1,0 +1,11 @@
+=== Before: 2 pods running ===
+spam-api-deployment-75f84ff989-f8wkw   1/1   Running   22m   minikube
+spam-api-deployment-75f84ff989-l4zqj   1/1   Running   22m   minikube-m02
+
+=== kubectl delete pod spam-api-deployment-75f84ff989-f8wkw ===
+pod "spam-api-deployment-75f84ff989-f8wkw" deleted from default namespace
+
+=== After: replacement pod created ===
+NAME                                   READY   STATUS    RESTARTS   AGE    IP           NODE           NOMINATED NODE   READINESS GATES
+spam-api-deployment-75f84ff989-l4zqj   1/1     Running   0          24m    10.244.1.8   minikube-m02   <none>           <none>
+spam-api-deployment-75f84ff989-q4tqc   1/1     Running   0          104s   10.244.0.8   minikube       <none>           <none>

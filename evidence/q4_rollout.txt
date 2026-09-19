@@ -1,0 +1,29 @@
+=== rollout status/history ===
+deployment.apps/spam-api-deployment 
+REVISION  CHANGE-CAUSE
+1         <none>
+2         <none>
+
+=== final healthz check ===
+{"status":"ok","version":"v2"}
+=== zero-downtime curl loop ===
+200
+200
+200
+200
+200
+200
+200
+200
+200
+200
+200
+200
+200
+200
+200
+200
+200
+200
+200
+200

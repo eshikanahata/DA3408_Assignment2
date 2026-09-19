@@ -1,0 +1,9 @@
+NAME                       READY   STATUS      RESTARTS   AGE   IP           NODE           NOMINATED NODE   READINESS GATES
+shard-validation-0-w9wd9   0/1     Completed   0          43s   10.244.1.2   minikube-m02   <none>           <none>
+shard-validation-1-78w6b   0/1     Completed   0          43s   10.244.1.3   minikube-m02   <none>           <none>
+shard-validation-2-w5ph8   0/1     Completed   0          43s   10.244.0.5   minikube       <none>           <none>
+shard-validation-3-qlp55   0/1     Completed   0          43s   10.244.1.6   minikube-m02   <none>           <none>
+shard-validation-4-fz9n4   0/1     Completed   0          43s   10.244.0.4   minikube       <none>           <none>
+shard-validation-5-m929n   0/1     Completed   0          43s   10.244.0.3   minikube       <none>           <none>
+shard-validation-6-z6lcl   0/1     Completed   0          43s   10.244.1.4   minikube-m02   <none>           <none>
+shard-validation-7-hxnk9   0/1     Completed   0          43s   10.244.1.5   minikube-m02   <none>           <none>
