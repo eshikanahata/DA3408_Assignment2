@@ -1,0 +1,38 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: shard-validation
+spec:
+  completions: 8
+  parallelism: 8 
+  completionMode: Indexed
+  backoffLimit: 4
+  template:
+    metadata:
+      labels:
+        app: shard-validation
+    spec:
+      restartPolicy: Never
+      containers:
+        - name: validator
+          image: shard-validator:latest  
+          imagePullPolicy: IfNotPresent   # crucial: "latest" tag defaults to Always, which
+                                        
+          resources:
+            requests:
+              cpu: "500m"
+            limits:
+              cpu: "500m"
+          env:
+            - name: JOB_COMPLETION_INDEX
+              valueFrom:
+                fieldRef:
+                  fieldPath: metadata.annotations['batch.kubernetes.io/job-completion-index']
+            - name: NODE_NAME
+              valueFrom:
+                fieldRef:
+                  fieldPath: spec.nodeName
+            - name: POD_NAME
+              valueFrom:
+                fieldRef:
+                  fieldPath: metadata.name
